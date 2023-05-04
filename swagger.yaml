@@ -67,6 +67,8 @@ paths:
       description: API for fetching a user profile
       parameters:
         - in: header
+        # Add the type for the Authorization parameter
+          type: string
           name: Authorization
           description: Attach Bearer JWT token
           required: true
@@ -91,6 +93,8 @@ paths:
       parameters:
         - in: header
           name: Authorization
+          # Add the type for the Authorization parameter
+          type: string
           description: Attach Bearer JWT token
           required: true
         - in: body
